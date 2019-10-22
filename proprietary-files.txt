@@ -85,7 +85,8 @@
 	lib/libext2_e2p.so
 	lib/libext2fs.so
 	lib/libext2_uuid.so
-	lib/libfile_op_mtk.so	
+	lib/libfile_op_mtk.so
+	lib/libfmq.so	
 	lib/libfmjni.so
 	lib/libfpspolicy_fw.so
 	lib/libfw_drmutils.so
@@ -178,7 +179,8 @@
 	lib64/libext2_quota.so
 	lib64/libext2_uuid.so
 	lib64/libext4_utils.so
-	lib64/libfile_op_mtk.so	
+	lib64/libfile_op_mtk.so
+	lib64/libfmq.so	
 	lib64/libfmjni.so
 	lib64/libfpspolicy_fw.so
 	lib64/libfw_drmutils.so
