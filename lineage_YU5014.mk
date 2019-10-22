@@ -18,14 +18,14 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common LOS stuff.
+# Inherit some common lineageos stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-
-# Inherit from YU YU5014
-$(call inherit-product, device/YU/YU5014/device.mk)
 
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
+
+# Inherit from hardware-specific part of the product configuration
+$(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
