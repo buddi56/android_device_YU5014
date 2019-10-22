@@ -16,13 +16,11 @@
 
 DEVICE_PATH := device/YU/YU5014
 
-
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/YU/YU5014/YU5014-vendor.mk)
 
 # Common stuff
 #$(call inherit-product, device/mediatek/mt6739-common/mt6739.mk)
-
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := YU5014
