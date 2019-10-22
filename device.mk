@@ -39,11 +39,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
         $(call find-copy-subdir-files,*,${LOCAL_PATH}/audio,system/etc)
-        
-# FMRadio
-PRODUCT_PACKAGES += \
-    FMRadio
-        
+              
 # Power
 PRODUCT_PACKAGES += \
     power.mt6739
