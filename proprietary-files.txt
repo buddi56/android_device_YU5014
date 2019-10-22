@@ -26,7 +26,6 @@
         etc/init/aal.rc
 	etc/init/aee_aed.rc
 	etc/init/aee_aed64.rc
-        etc/init/bootlogoupdater.rc
 	etc/init/emdlogger1.rc
 	etc/init/emdlogger2.rc
 	etc/init/emdlogger5.rc
@@ -38,7 +37,6 @@
 	etc/init/mobile_log_d.rc
 	etc/init/netdiag.rc
 	etc/init/terserver.rc
-	etc/a2dp_audio_policy_configuration.xml
 	etc/aee-config
 	etc/custom.conf
 	etc/spn-conf.xml	
@@ -47,7 +45,6 @@
 	framework/mediatek-framework.jar
 	framework/mediatek-framework-net.jar
 	framework/mediatek-ims-common.jar
-	framework/mediatek-ims-extension-plugin.jar
 	framework/mediatek-services.jar
 	framework/mediatek-telecom-common.jar
 	framework/mediatek-telephony-base.jar
@@ -222,4 +219,3 @@
 	lib64/libui_ext_fwk.so
 	lib64/libvsync_enhance.so
 	lib64/libvsync_hint.so
-	lib64/libxtables.so
