@@ -1,7 +1,7 @@
 Device Tree for YU Ace
 ===========================================
 
-The YU ACe (codenamed _"YU5014"_) is a mid-range smartphone from Micromax YU, announced in August 2018.	
+The YU Ace (codenamed _"YU5014"_) is a mid-range smartphone from Micromax YU, announced in August 2018.	
  
 ## Device specifications
 
