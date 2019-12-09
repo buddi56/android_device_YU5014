@@ -20,9 +20,9 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 
-TARGET_CPU_ABI_LIST_64_BIT := $(TARGET_CPU_ABI)
-TARGET_CPU_ABI_LIST_32_BIT := $(TARGET_2ND_CPU_ABI),$(TARGET_2ND_CPU_ABI2)
-TARGET_CPU_ABI_LIST := $(TARGET_CPU_ABI_LIST_64_BIT),$(TARGET_CPU_ABI_LIST_32_BIT)
+TARGET_CPU_ABI_LIST := arm64-v8a,armeabi-v7a,armeabi
+TARGET_CPU_ABI_LIST_64_BIT := arm64-v8a
+TARGET_CPU_ABI_LIST_32_BIT := armeabi-v7a,armeabi
 
 # Display
 TARGET_SCREEN_HEIGHT := 1440
@@ -48,10 +48,6 @@ TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/zImage
 
 BOARD_MKBOOTIMG_ARGS := --base 0x40078000 --ramdisk_offset 0x04f88000 --second_offset 0x00e88000 --tags_offset 0x03f88000
 
-# Linker
-LINKER_FORCED_SHIM_LIBS := /system/lib/libnetutils.so|libshim_ifc.so
-LINKER_FORCED_SHIM_LIBS += /system/lib/libgui.so|libshim_gui.so
-
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 25165824
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 25165824
@@ -66,10 +62,10 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 TARGET_USERIMAGES_USE_EXT4 := true
 
 # Recovery
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/recovery.fstab
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6739
 
 # System Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system_prop.mk
 
 # Vendor
 TARGET_COPY_OUT_VENDOR := vendor

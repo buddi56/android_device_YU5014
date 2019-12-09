@@ -1,5 +1,6 @@
 #
-# Copyright (C) 2018 The Android Open-Source Project
+# Copyright 2019 The Android Open Source Project
+# Copyright (C) 2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -31,9 +32,6 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
-# Bootanimation
-TARGET_SCREEN_WIDTH := 720
-TARGET_SCREEN_HEIGHT := 1440
 
 PRODUCT_NAME := lineage_YU5014
 PRODUCT_DEVICE := YU5014
