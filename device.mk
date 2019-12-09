@@ -25,12 +25,6 @@ $(call inherit-product, vendor/YU/YU5014/YU5014-vendor.mk)
 # Assert
 TARGET_OTA_ASSERT_DEVICE := YU5014
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-ifneq ($(findstring lineage, $(TARGET_PRODUCT)),)
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
-endif
-
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default
@@ -38,10 +32,6 @@ PRODUCT_PACKAGES += \
 # Power
 PRODUCT_PACKAGES += \
     power.mt6739
-
-# Display
-PRODUCT_AAPT_CONFIG := normal xhdpi 
-PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -137,5 +127,5 @@ PRODUCT_COPY_FILES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    init.target.rc
+    init.target.rc \
     init.mt6739.rc

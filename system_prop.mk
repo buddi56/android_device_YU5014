@@ -62,6 +62,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 ro.sys.usb.storage.type=mtp,adb	
 
 #WiFi
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 mediatek.wlan.chip=CONSYS_MT6739 \
 mediatek.wlan.module.postfix=_consys_mt6739 \
 ro.mediatek.wlan.wsc=1 \
@@ -72,6 +73,7 @@ wifi.interface=wlan0 \
 wifi.direct.interface=p2p0
 
 #Adding for Debugging
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 persist.service.adb.enable=1
 persist.service.debuggable=1
 persist.sys.usb.config=mtp,adb

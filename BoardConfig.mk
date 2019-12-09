@@ -28,6 +28,9 @@ TARGET_CPU_ABI_LIST_32_BIT := armeabi-v7a,armeabi
 TARGET_SCREEN_HEIGHT := 1440
 TARGET_SCREEN_WIDTH := 720
 
+PRODUCT_AAPT_CONFIG := normal xhdpi 
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
+
 # Kernel
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 buildvariant=user androidboot.selinux=permissive
 
