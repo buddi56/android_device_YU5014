@@ -38,7 +38,7 @@ etc/init/cameraserver.rc
 etc/init/emdlogger1.rc
 etc/init/emdlogger2.rc
 etc/init/emdlogger5.rc
-etc/init/ged_srv
+etc/init/ged_srv.rc
 etc/init/init.thermald.rc
 etc/init/init.vtservice.rc
 etc/init/kpoc_charger.rc
